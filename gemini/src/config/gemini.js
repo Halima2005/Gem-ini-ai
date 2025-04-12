@@ -5,8 +5,7 @@ if (!apiKey) {
 }
 
 const genAI = new GoogleGenerativeAI(apiKey);
-const apiKey ="AIzaSyB7zs1qJsXuEamNG9Xi-zg1PoQce5z9yGw"; // This is where the API key is stored
-const genAI = new GoogleGenerativeAI(apiKey);  // Pass the API key here
+
 
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-flash",
