@@ -2,22 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/*",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
+      "src": "index.html",
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/src/index.html"
+      "dest": "/index.html"
     }
-  ],
-  "functions": {
-    "api/*.js": {
-      "maxDuration": 30
-    }
-  }
+  ]
 }
